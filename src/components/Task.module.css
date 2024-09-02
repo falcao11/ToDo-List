@@ -1,0 +1,71 @@
+.task {
+  background: var(--gray-500);
+  padding: 1rem;
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.task > p {
+  width: 100%;
+}
+
+.task label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.task label input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox {
+  display: flex;
+  border: 2px solid var(--blue);
+  border-radius: 100%;
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.checkbox:hover {
+  background-color: rgba(30, 112, 159, 0.2);
+  border: 2px solid var(--blue-dark);
+}
+
+.checkboxChecked {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--purple-dark);
+  border-radius: 100%;
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.checkboxChecked:hover {
+  background-color: var(--purple);
+}
+
+.task button {
+  background: none;
+  border: none;
+  display: flex;
+  border-radius: 4px;
+  transition: 0.2s;
+  padding: 5px 6px;
+}
+
+.task button:hover,
+.task button:hover path {
+  background: var(--gray-400);
+  fill: var(--danger);
+}
+
+.isCompleted {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}

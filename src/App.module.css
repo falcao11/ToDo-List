@@ -1,0 +1,43 @@
+.wrapper {
+  max-width: 46rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+.tasks {
+  margin: 4rem 0 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.allTasks {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.875rem; /* 14px */
+  font-weight: bold;
+  color: var(--blue);
+  align-items: center;
+}
+
+.tasksCount {
+  background: var(--gray-400);
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 0.75rem; /* 12px */
+  color: var(--gray-200);
+}
+
+.finishedTasks {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.875rem; /* 14px */
+  font-weight: bold;
+  color: var(--purple);
+  align-items: center;
+}

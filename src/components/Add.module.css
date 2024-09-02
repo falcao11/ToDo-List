@@ -1,0 +1,32 @@
+.search {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  gap: 0.5rem;
+  margin-top: calc(0px - 2rem - 27px);
+}
+
+.search input {
+  background: var(--gray-500);
+  color: var(--gray-100);
+  border: 1px solid var(--gray-700);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.search button[type="submit"] {
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  gap: 0.5rem;
+
+  transition: background-color 0.2s;
+}
+
+.search button[type="submit"]:hover {
+  background: var(--blue);
+}
